@@ -42,7 +42,7 @@ function runGame(gametype){
         displayAdditionQuestion(num1, num2);
     }else if(gametype === "multiply"){
         displayMultiplyQuestion(num1, num2);
-    }else if(gametype === "substract") {
+    }else if(gametype === "subtract") {
         displaySubtractQuestion(num1, num2);
     }else if(gametype === "division"){
         displayDivisionQuestion(num1, num2);
@@ -87,7 +87,7 @@ function calculateCorrectAnswer(){
     }else if(operator === "x"){
         return [operand1 * operand2, "multiply"];
     }else if(operator === "-") {
-        return [operand1 - operand2, "substract"]
+        return [operand1 - operand2, "subtract"]
     }else if(operator === "/")
         return [operand1 / operand2, "division"]
     else{
